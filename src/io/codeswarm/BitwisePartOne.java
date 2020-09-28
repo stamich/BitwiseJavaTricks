@@ -17,6 +17,22 @@ public class BitwisePartOne {
     }
 
     //
+    // COMPLEMENT OPERATOR ~
+    //
+
+    public static int getTheOppositeNumber(int number) {
+        return ~number + 1;
+    }
+
+    public static int addOne(int number) {
+        return -~number;
+    }
+
+    public static int subtractOne(int number) {
+        return ~-number;
+    }
+
+    //
     // LEFT SHIFT OPERATOR <<
     //
 
