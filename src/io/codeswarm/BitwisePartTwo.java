@@ -41,4 +41,20 @@ public class BitwisePartTwo {
         }
         return sb.toString();
     }
+
+    public static int getTheMaxOfTwoInts(int x, int y) {
+        return y & ((x - y) >> 31) | x & (~(x - y) >> 31);
+    }
+
+    public static int getTheMinOfTwoInts(int x, int y) {
+        return x & ((x - y) >> 31) | y & (~(x - y) >> 31);
+    }
+
+    public static long getTheMaxOfTwoLongs(long x, long y) {
+        return y & ((x - y) >> 63) | x & (~(x - y) >> 63);
+    }
+
+    public static long getTheMinOfTwoLongs(long x, long y) {
+        return x & ((x - y) >> 63) | y & (~(x - y) >> 63);
+    }
 }
